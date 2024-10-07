@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
+    background-color: #e0e0e0; /* Abu-abu yang lebih gelap untuk lebih kontras */
     color: #333;
     margin: 0;
     padding: 0;
@@ -62,9 +62,10 @@ nav ul li a:hover {
 section {
     padding: 40px;
     margin: 20px 0;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15); /* Lebih besar dan lebih gelap untuk efek mendalam */
     border-radius: 8px;
+    border: 1px solid #ddd; /* Border halus untuk membantu section terlihat lebih jelas */
 }
 
 #about, #projects, #contact {
