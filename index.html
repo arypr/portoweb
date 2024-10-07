@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Ary Prianes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
@@ -19,34 +21,35 @@
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
         <p>Hello! I'm Ary Prianes, a fresh graduate with a strong passion for data analysis and data science. I have hands-on experience in leveraging data to provide insights and drive impactful decisions.</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
         <h2>Projects</h2>
         <div class="project">
             <h3>Dashboard 1: Sales Analysis</h3>
             <p>This dashboard analyzes sales data and visualizes key performance metrics.</p>
             <a href="https://github.com/arypr/project-dashboard1" target="_blank">
-                <img src="images/regional_revenue_dashboard.jpg" alt="Sales Dashboard" style="width:100%; max-width:600px;">
+                <img src="images/regional_revenue_dashboard.jpg" alt="Sales Dashboard">
             </a>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="fade-up">
             <h3>Dashboard 2: Customer Segmentation</h3>
             <p>This dashboard segments customers based on purchasing behavior and other metrics.</p>
             <a href="https://github.com/arypr/project-dashboard2" target="_blank">
-                <img src="images/customer-segmentation-dashboard-thumbnail.png" alt="Customer Segmentation Dashboard" style="width:100%; max-width:600px;">
+                <img src="images/customer-segmentation-dashboard-thumbnail.png" alt="Customer Segmentation Dashboard">
             </a>
         </div>
-        <!-- Add more projects as needed -->
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to reach out via <a href="mailto:ary.prianes@gmail.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/ary-prianes-18457a218/" target="_blank">LinkedIn</a>.</p>
+        <p>If you'd like to get in touch, feel free to reach out via <a href="mailto:ary.prianes@gmail.com">email</a> or connect with me on:</p>
+        <a href="https://www.linkedin.com/in/ary-prianes-18457a218/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon"></a>
+        <a href="https://github.com/arypr" target="_blank"><img src="images/github-icon.png" alt="GitHub" class="social-icon"></a>
     </section>
 
     <footer>
@@ -54,5 +57,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
