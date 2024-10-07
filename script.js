@@ -1,4 +1,3 @@
-
 // Smooth Scroll Functionality
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -16,12 +15,10 @@ projects.forEach(project => {
     project.addEventListener('mouseover', () => {
         project.style.transform = 'scale(1.05)';
         project.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.3)';
-        project.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
     });
 
     project.addEventListener('mouseout', () => {
         project.style.transform = 'scale(1)';
         project.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-        project.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
     });
 });
