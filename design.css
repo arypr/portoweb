@@ -40,16 +40,14 @@ section {
     padding: 20px;
     margin: 20px 0;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Add padding-bottom to all sections */
 #about, #projects, #contact {
     max-width: 900px;
     margin: 0 auto;
-}
-
-#contact {
-    padding-bottom: 80px; /* Tambahkan padding-bottom agar tidak tertutup footer */
+    padding-bottom: 100px; /* Extra space to avoid footer overlap */
 }
 
 h2 {
@@ -75,12 +73,14 @@ h2 {
     text-decoration: underline;
 }
 
+/* Remove fixed position and add relative footer */
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
     color: white;
-    position: fixed;
-    width: 100%;
+    position: relative; /* Change to relative to avoid overlap */
     bottom: 0;
+    width: 100%;
+    margin-top: 50px;
 }
