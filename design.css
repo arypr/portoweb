@@ -79,10 +79,29 @@ h2 {
 }
 
 .project {
+    background-color: #f0f8ff; /* Warna biru pastel lembut */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.project {
+    background: linear-gradient(135deg, #f0f8ff, #e0ffe0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.project {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid #007BFF; /* Border kiri dengan warna utama */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 20px;
 }
