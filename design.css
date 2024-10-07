@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f5f5f5;
     color: #333;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #007BFF;
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
     color: white;
     padding: 20px;
     text-align: center;
@@ -35,6 +35,28 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
 }
 
 section {
@@ -55,20 +77,13 @@ h2 {
     font-size: 2rem;
 }
 
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-}
-
 .project {
-    flex-basis: 45%;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .project img {
@@ -77,8 +92,9 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.project img:hover {
+.project:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .project a {
@@ -92,18 +108,24 @@ h2 {
 }
 
 footer {
-    background-color: #007BFF;
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
     color: white;
     text-align: center;
     padding: 15px;
     position: relative;
 }
 
-@media (max-width: 768px) {
-    .project {
-        flex-basis: 100%;
-    }
+.social-icon {
+    width: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
 
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
     }
@@ -111,5 +133,13 @@ footer {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .project {
+        flex-basis: 100%;
+    }
+
+    section {
+        padding: 20px;
     }
 }
