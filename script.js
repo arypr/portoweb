@@ -8,9 +8,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-// Toggle Dark Mode
-const toggleButton = document.getElementById('darkModeToggle');
-toggleButton.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-});
