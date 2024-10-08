@@ -1,3 +1,91 @@
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    /* Header */
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    /* About Section */
+    #about .profile-photo {
+        width: 120px;
+    }
+
+    #about p {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Experience Section */
+    .experience ul {
+        padding-left: 15px;
+    }
+
+    .certificate-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate-image {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    #contact p {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+}
+
+/* Media Queries for Very Small Devices */
+@media (max-width: 480px) {
+    /* Header */
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    /* About Section */
+    #about .profile-photo {
+        width: 100px;
+    }
+
+    /* Project Titles */
+    .project h3 {
+        font-size: 1.2em;
+    }
+
+    /* Experience Section */
+    .experience ul li {
+        font-size: 0.9em;
+    }
+}
+
+
 /* General styling */
 body {
     font-family: 'Poppins', sans-serif;
