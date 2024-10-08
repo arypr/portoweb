@@ -109,18 +109,26 @@ header h1 {
 /* Experience Section */
 #experience {
     padding: 50px 20px;
-    background-color: #ecf0f1;
+    background-color: #ffffff; /* Menggunakan warna latar belakang putih */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .experience {
     margin-bottom: 40px;
     text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
 }
 
 .experience h3 {
     font-size: 1.7em;
     margin-bottom: 15px;
-    text-align: center;
+    font-weight: 600; /* Bold */
+    text-transform: uppercase; /* Mengubah teks menjadi kapital */
 }
 
 .experience ul {
@@ -132,6 +140,13 @@ header h1 {
     margin-bottom: 10px;
     font-size: 1.1em;
     line-height: 1.6;
+}
+
+/* Tambahkan styling untuk container */
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Ruang antar elemen */
 }
 
 /* Certificate Images Section */
