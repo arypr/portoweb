@@ -108,10 +108,62 @@
     }
 }
 
-    /* Experience Section */
-    .experience ul {
-        padding-left: 15px;
+/* Experience Section */
+#experience {
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+.experience {
+    margin-bottom: 40px;
+    text-align: left; /* Ensure left alignment for better readability */
+}
+
+.experience h3 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    text-align: center; /* Center the heading for better balance */
+}
+
+/* Styling for the list of experiences */
+.experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.6; /* Adjust line-height for better readability */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .experience {
+        margin-bottom: 30px;
     }
+
+    .experience h3 {
+        font-size: 1.5em; /* Slightly smaller font for mobile */
+        text-align: center;
+    }
+
+    .experience ul li {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .experience h3 {
+        font-size: 1.3em;
+    }
+
+    .experience ul li {
+        font-size: 0.9em;
+        line-height: 1.4; /* Adjust line height for smaller screens */
+    }
+}
+
 
     .certificate-images {
         flex-direction: column;
