@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #e0e0e0; /* Abu-abu yang lebih gelap untuk lebih kontras */
+    background-color: #e0e0e0;
     color: #333;
     margin: 0;
     padding: 0;
@@ -39,92 +39,31 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 50%;
-    background-color: white;
-    transition: width 0.3s ease, left 0.3s ease;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-nav ul li a:hover {
-    color: #FFD700;
-}
-
 section {
     padding: 40px;
     margin: 20px 0;
     background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0,0,0,0.15); /* Lebih besar dan lebih gelap untuk efek mendalam */
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
     border-radius: 8px;
-    border: 1px solid #ddd; /* Border halus untuk membantu section terlihat lebih jelas */
+    border: 1px solid #ddd;
 }
 
-#about, #projects, #contact {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-#about {
-    text-align: center;
-    margin-bottom: 40px; /* Memberikan jarak bawah agar tidak terlalu rapat dengan bagian berikutnya */
-}
-
-#about h2 {
-    margin-bottom: 10px; /* Mengurangi jarak antar judul dan gambar */
-}
-
-#about p, #projects p, #contact p {
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.profile-photo {
-    width: 150px; /* Atur ukuran yang diinginkan */
-    height: 150px; /* Ukuran yang sama untuk lebar dan tinggi */
-    border-radius: 50%; /* Membuat foto menjadi bulat */
-    object-fit: cover; /* Memastikan foto ter-crop secara proporsional */
-    border: 3px solid #007BFF; /* Opsional: Border dengan warna sesuai */
-    margin: 20px auto;
-    display: block;
-}
-
-h2 {
-    color: #007BFF;
-    font-size: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Menambah bayangan untuk efek mendalam */
-    padding-bottom: 5px;
-    border-bottom: 2px solid #007BFF; /* Underline */
-    display: inline-block;
+/* Project Section - Horizontal Layout */
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
 }
 
 .project {
+    min-width: 300px;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-left: 4px solid #007BFF; /* Border kiri dengan warna utama */
+    border-left: 4px solid #007BFF;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 20px;
-}
-
-/* Gunakan selector ini untuk menambahkan warna berbeda di project tertentu */
-.project.alt-color {
-    background-color: #f0f8ff; /* Biru pastel lembut */
-}
-
-/* Atau gunakan gradasi */
-.project.gradient {
-    background: linear-gradient(135deg, #f0f8ff, #e0ffe0);
 }
 
 .project img {
@@ -133,19 +72,15 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+/* Experience Section */
+.experience {
+    margin-bottom: 20px;
 }
 
-.project a {
+.experience h3 {
     color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project a:hover {
-    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -153,40 +88,4 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    position: relative;
-}
-
-.social-icon {
-    width: 24px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-.social-icon:hover {
-    transform: scale(1.2);
-    filter: brightness(1.2); /* Menambah kecerahan untuk efek yang lebih mencolok */
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .project {
-        flex-basis: 100%;
-    }
-
-    section {
-        padding: 20px;
-        margin: 15px 0;
-    }
-
-    h2 {
-        font-size: 1.8rem; /* Mengurangi ukuran font untuk layar kecil */
-    }
 }
