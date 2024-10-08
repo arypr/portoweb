@@ -222,14 +222,15 @@ footer p {
 
     /* Projects Section */
     .projects-container {
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        flex-wrap: wrap; /* Allow wrapping for mobile */
+        justify-content: center; /* Center items */
     }
 
     .project {
-        width: 80%;
-        margin-right: 15px;
-        max-width: none;
+        flex: 1 1 100%; /* Each project takes full width */
+        max-width: 300px; /* Set max width for project cards */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
     }
 
     /* Experience Section */
@@ -278,7 +279,7 @@ footer p {
     /* Projects Section */
     .project {
         width: 90%;
-        margin-right: 10px;
+        margin-right: 0; /* Remove right margin for smaller devices */
     }
 
     .project h3 {
