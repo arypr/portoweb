@@ -19,6 +19,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Bayangan teks untuk heading utama */
 }
 
 /* Section Headers */
@@ -29,6 +30,11 @@ section h2 {
     text-align: center; /* Center align the headers */
     position: relative; /* Agar garis dapat ditempatkan dengan baik */
     padding: 10px; /* Tambahkan padding di sekitar teks */
+    background: linear-gradient(135deg, #00C6FF, #007BFF); /* Gradien untuk heading */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Bayangan teks */
+    transition: transform 0.3s ease; /* Efek transisi */
 }
 
 section h2::after {
@@ -38,6 +44,11 @@ section h2::after {
     height: 2px; /* Tinggi garis */
     background: #007BFF; /* Warna garis */
     margin: 10px auto 0; /* Margin untuk memposisikan garis di bawah judul */
+}
+
+/* Hover Effect on Section Heading */
+section h2:hover {
+    transform: scale(1.05); /* Sedikit membesar saat hover */
 }
 
 /* Warna untuk Judul Pekerjaan */
