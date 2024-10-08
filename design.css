@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: row; /* Menyusun menu secara horizontal */
-        justify-content: center; /* Memusatkan item menu */
-        gap: 10px; /* Jarak antar item menu */
+        flex-direction: column; /* Menyusun menu secara vertikal */
+        align-items: center; /* Memusatkan item menu */
+        gap: 5px; /* Jarak antar item menu yang lebih kecil */
     }
     
     /* Menyesuaikan ukuran teks jika perlu */
@@ -10,6 +10,7 @@
         font-size: 1rem; /* Ukuran font yang lebih kecil di mobile */
     }
 }
+
 
 
 /* Horizontal Navigation */
