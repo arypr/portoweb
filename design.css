@@ -1,3 +1,52 @@
+/* Global Styles (adjust colors as desired for better readability) */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #e0e0e0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Section Headers */
+section h2 {
+    color: #007BFF; /* Warna judul section */
+    font-size: 2rem;
+    margin-bottom: 10px; /* Mengurangi jarak bawah */
+    text-align: center; /* Center align the headers */
+    position: relative; /* Agar garis dapat ditempatkan dengan baik */
+    padding: 10px; /* Tambahkan padding di sekitar teks */
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 50%; /* Lebar garis */
+    height: 2px; /* Tinggi garis */
+    background: #007BFF; /* Warna garis */
+    margin: 10px auto 0; /* Margin untuk memposisikan garis di bawah judul */
+}
+
+/* Warna untuk Judul Pekerjaan */
+.job-title {
+    color: #555; /* Ubah warna sesuai kebutuhan */
+    font-size: 1.2rem; /* Ukuran font untuk judul pekerjaan */
+    text-align: center; /* Center align jika perlu */
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -71,72 +120,18 @@ nav ul li a:hover::after {
     object-fit: cover;
 }
 
-/* Section Headers */
-section h2 {
-    color: #007BFF; /* Warna teks */
-    font-size: 2.5rem; /* Ukuran font yang lebih besar */
+/* Experience Section */
+.experience {
     margin-bottom: 20px;
-    text-align: center; /* Pusatkan teks */
-    text-transform: uppercase; /* Ubah teks menjadi huruf kapital */
-    position: relative; /* Untuk menambahkan efek */
-    padding: 10px; /* Tambahkan padding di sekitar teks */
 }
 
-/* Menambahkan efek bayangan pada teks */
-section h2::before {
-    content: ''; /* Membuat elemen sebelum teks */
-    position: absolute;
-    top: 0; /* Atur posisi di atas teks */
-    left: 50%; /* Pusatkan secara horizontal */
-    width: 100%; /* Lebar penuh */
-    height: 10px; /* Tinggi bayangan */
-    background: rgba(0, 123, 255, 0.2); /* Latar belakang bayangan */
-    transform: translateX(-50%); /* Pusatkan bayangan */
-    z-index: -1; /* Letakkan di belakang teks */
+.experience h3 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-/* Hover effect untuk header */
-section h2:hover {
-    color: #FFD700; /* Mengubah warna saat hover */
-    transition: color 0.3s; /* Animasi transisi */
-}
-
-section p {
-    color: #555; /* Darker gray for the paragraph text */
-}
-
-/* Global Styles (adjust colors as desired for better readability) */
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    background-color: #e0e0e0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: linear-gradient(135deg, #007BFF, #00C6FF);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-/* Adjusted Navigation Links */
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    position: relative;
-    transition: color 0.3s;
-}
-
+/* Section Styling */
 section {
     padding: 40px;
     margin: 20px 0;
@@ -170,17 +165,7 @@ section {
     transition: transform 0.3s ease;
 }
 
-/* Experience Section */
-.experience {
-    margin-bottom: 20px;
-}
-
-.experience h3 {
-    color: #007BFF;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
+/* Certificate Images */
 .certificate-images {
     display: flex; /* Menyusun gambar secara horizontal */
     justify-content: center; /* Memusatkan gambar */
