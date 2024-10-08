@@ -1,3 +1,4 @@
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column; /* Menyusun menu secara vertikal */
@@ -72,10 +73,32 @@ nav ul li a:hover::after {
 
 /* Section Headers */
 section h2 {
-    color: #007BFF; /* Change color as desired */
-    font-size: 2rem;
+    color: #007BFF; /* Warna teks */
+    font-size: 2.5rem; /* Ukuran font yang lebih besar */
     margin-bottom: 20px;
-    text-align: center; /* Center align the headers */
+    text-align: center; /* Pusatkan teks */
+    text-transform: uppercase; /* Ubah teks menjadi huruf kapital */
+    position: relative; /* Untuk menambahkan efek */
+    padding: 10px; /* Tambahkan padding di sekitar teks */
+}
+
+/* Menambahkan efek bayangan pada teks */
+section h2::before {
+    content: ''; /* Membuat elemen sebelum teks */
+    position: absolute;
+    top: 0; /* Atur posisi di atas teks */
+    left: 50%; /* Pusatkan secara horizontal */
+    width: 100%; /* Lebar penuh */
+    height: 10px; /* Tinggi bayangan */
+    background: rgba(0, 123, 255, 0.2); /* Latar belakang bayangan */
+    transform: translateX(-50%); /* Pusatkan bayangan */
+    z-index: -1; /* Letakkan di belakang teks */
+}
+
+/* Hover effect untuk header */
+section h2:hover {
+    color: #FFD700; /* Mengubah warna saat hover */
+    transition: color 0.3s; /* Animasi transisi */
 }
 
 section p {
@@ -157,6 +180,7 @@ section {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+
 .certificate-images {
     display: flex; /* Menyusun gambar secara horizontal */
     justify-content: center; /* Memusatkan gambar */
@@ -172,7 +196,6 @@ section {
     border-radius: 15px; /* Mengatur sudut tumpul */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk memberikan kedalaman */
 }
-
 
 /* Footer */
 footer {
