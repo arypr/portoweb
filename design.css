@@ -226,16 +226,34 @@ header h1 {
     font-size: 1.1em;
 }
 
+/* Certificate Images Section */
 .certificate-images {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     margin-top: 20px;
 }
 
 .certificate-image {
     width: 200px;
     border-radius: 10px;
+    margin-right: 20px; /* Add space between images */
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .certificate-images {
+        flex-direction: column; /* Stack images vertically on mobile */
+        align-items: center;
+    }
+
+    .certificate-image {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* Contact Section */
 #contact {
