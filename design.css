@@ -158,6 +158,21 @@ section {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+.certificate-images {
+    display: flex; /* Menyusun gambar secara horizontal */
+    justify-content: center; /* Memusatkan gambar */
+    gap: 20px; /* Jarak antar gambar */
+    margin-top: 20px; /* Jarak atas untuk memisahkan gambar dari daftar */
+}
+
+.certificate-image {
+    width: 100%; /* Mengatur lebar gambar agar responsif */
+    max-width: 200px; /* Ukuran maksimum gambar, sesuaikan dengan kebutuhan */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 15px; /* Mengatur sudut tumpul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk memberikan kedalaman */
+}
+
 
 /* Footer */
 footer {
