@@ -77,6 +77,15 @@ h2 {
     color: #007BFF;
     font-size: 2rem;
 }
+.profile-photo {
+    width: 150px; /* Atur ukuran yang diinginkan */
+    height: 150px; /* Ukuran yang sama untuk lebar dan tinggi */
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    object-fit: cover; /* Memastikan foto ter-crop secara proporsional */
+    border: 3px solid #007BFF; /* Opsional: Border dengan warna sesuai */
+    margin: 20px auto;
+    display: block;
+}
 
 .project {
     background-color: #ffffff;
