@@ -24,7 +24,7 @@
         padding: 0 15px;
     }
 
-   /* Projects Section */
+/* Projects Section */
 #projects {
     padding: 50px 20px;
     background-color: #ffffff;
@@ -32,19 +32,40 @@
 
 .projects-container {
     display: flex;
-    flex-wrap: nowrap; /* Prevents wrapping to force horizontal layout */
+    flex-wrap: wrap; /* Allows wrapping for more flexibility */
     justify-content: space-around;
-    overflow-x: auto; /* Adds horizontal scrolling for mobile devices */
+    overflow-x: hidden; /* Remove horizontal scroll */
 }
 
 .project {
-    width: 30%; /* Keep it 30% width for desktop */
+    flex: 1 1 30%; /* Flexible width, 30% of container */
     background-color: #f0f0f0;
     margin-right: 20px;
+    margin-bottom: 30px; /* Ensure bottom margin is present */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    flex-shrink: 0; /* Prevent shrinking of project boxes */
+    max-width: 350px; /* Optional: prevent projects from getting too wide */
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Allow horizontal scrolling on mobile */
+    }
+
+    .project {
+        width: 80%; /* Expand the project width for mobile */
+        margin-right: 15px;
+        max-width: none; /* Remove width restrictions */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: 90%; /* Further expand width for smaller mobile screens */
+        margin-right: 10px;
+    }
 }
 
 .project h3 {
