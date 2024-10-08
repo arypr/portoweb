@@ -1,28 +1,18 @@
-/* Global Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    background-color: #e0e0e0;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Menyusun menu secara vertikal */
+        align-items: center; /* Memusatkan item menu */
+        gap: 5px; /* Jarak antar item menu yang lebih kecil */
+    }
+    
+    /* Menyesuaikan ukuran teks jika perlu */
+    nav ul li a {
+        font-size: 1rem; /* Ukuran font yang lebih kecil di mobile */
+    }
 }
 
-/* Header Styles */
-header {
-    background: linear-gradient(135deg, #007BFF, #00C6FF);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-/* Navigation Styles */
+/* Horizontal Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -64,30 +54,24 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Menyusun menu secara vertikal */
-        align-items: center; /* Memusatkan item menu */
-        gap: 5px; /* Jarak antar item menu yang lebih kecil */
-    }
-    
-    /* Menyesuaikan ukuran teks jika perlu */
-    nav ul li a {
-        font-size: 1rem; /* Ukuran font yang lebih kecil di mobile */
-    }
+/* Profile Photo in Circle Frame */
+.profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #007BFF; /* Frame color */
+    margin: 0 auto 20px; /* Center it if needed */
+    display: block;
 }
 
-/* Section Styles */
-section {
-    padding: 40px;
-    margin: 20px 0;
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    border: 1px solid #ddd;
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+/* Section Headers */
 section h2 {
     color: #007BFF; /* Warna teks */
     font-size: 2.5rem; /* Ukuran font yang lebih besar */
@@ -121,21 +105,45 @@ section p {
     color: #555; /* Darker gray for the paragraph text */
 }
 
-/* Profile Photo in Circle Frame */
-.profile-photo {
-    width: 150px; /* Adjust size as needed */
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid #007BFF; /* Frame color */
-    margin: 0 auto 20px; /* Center it if needed */
-    display: block;
+/* Global Styles (adjust colors as desired for better readability) */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #e0e0e0;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.profile-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+header {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Adjusted Navigation Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 /* Project Section - Horizontal Layout */
@@ -173,7 +181,6 @@ section p {
     margin-bottom: 10px;
 }
 
-/* Certificate Images Section */
 .certificate-images {
     display: flex; /* Menyusun gambar secara horizontal */
     justify-content: center; /* Memusatkan gambar */
