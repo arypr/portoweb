@@ -73,10 +73,21 @@ section {
     margin: 0 auto;
 }
 
-h2 {
-    color: #007BFF;
-    font-size: 2rem;
+#about {
+    text-align: center;
+    margin-bottom: 40px; /* Memberikan jarak bawah agar tidak terlalu rapat dengan bagian berikutnya */
 }
+
+#about h2 {
+    margin-bottom: 10px; /* Mengurangi jarak antar judul dan gambar */
+}
+
+#about p, #projects p, #contact p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 .profile-photo {
     width: 150px; /* Atur ukuran yang diinginkan */
     height: 150px; /* Ukuran yang sama untuk lebar dan tinggi */
@@ -85,6 +96,15 @@ h2 {
     border: 3px solid #007BFF; /* Opsional: Border dengan warna sesuai */
     margin: 20px auto;
     display: block;
+}
+
+h2 {
+    color: #007BFF;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Menambah bayangan untuk efek mendalam */
+    padding-bottom: 5px;
+    border-bottom: 2px solid #007BFF; /* Underline */
+    display: inline-block;
 }
 
 .project {
@@ -106,7 +126,6 @@ h2 {
 .project.gradient {
     background: linear-gradient(135deg, #f0f8ff, #e0ffe0);
 }
-
 
 .project img {
     width: 100%;
@@ -145,6 +164,7 @@ footer {
 
 .social-icon:hover {
     transform: scale(1.2);
+    filter: brightness(1.2); /* Menambah kecerahan untuk efek yang lebih mencolok */
 }
 
 @media (max-width: 768px) {
@@ -163,5 +183,10 @@ footer {
 
     section {
         padding: 20px;
+        margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Mengurangi ukuran font untuk layar kecil */
     }
 }
