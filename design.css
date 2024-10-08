@@ -2,7 +2,7 @@
     nav ul {
         flex-direction: column; /* Menyusun menu secara vertikal */
         align-items: center; /* Memusatkan item menu */
-        gap: 10px; /* Jarak antar item menu */
+        gap: 7px; /* Jarak antar item menu */
     }
     
     /* Menyesuaikan ukuran teks jika perlu */
