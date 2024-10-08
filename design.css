@@ -47,7 +47,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover {
-    color: #00C6FF; /* Change color on hover */
+    color: #FFD700; /* Change color on hover */
 }
 
 nav ul li a:hover::after {
