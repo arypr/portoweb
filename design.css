@@ -164,6 +164,7 @@ section {
     justify-content: center; /* Memusatkan gambar */
     gap: 20px; /* Jarak antar gambar */
     margin-top: 20px; /* Jarak atas untuk memisahkan gambar dari daftar */
+    overflow: hidden;
 }
 
 .certificate-image {
